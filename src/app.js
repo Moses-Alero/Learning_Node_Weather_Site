@@ -46,7 +46,7 @@ app.get('/weather',(req,res)=>{
 
         forecast(geo_data,(error,data)=>{
             if(error) return res.send({error});
-             res.send(data= {Address:req.query.location,...data});   
+            res.send(data= {Address:req.query.location,...data});   
         })
     })
     
