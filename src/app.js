@@ -10,7 +10,7 @@ const geocode = require('./utils/geocode.js');
 const forecast = require('./utils/forecast.js'); 
 
 const app = express();
-  
+
 const PublicDirectoryPath = path.join(__dirname,'../public/');
 const viewsPath = path.join(__dirname,'../templates/views')
 const Partials_path =path.join(__dirname, '../templates/partials');
