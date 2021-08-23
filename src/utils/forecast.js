@@ -13,7 +13,7 @@ const forecast = ({latitude,longitude},callback)=>{
         }else{
             callback("",data={
                 Location: body.location.name,
-                Temperature: `The current temperature is ${body.current.temperature} degrees Celcius`,
+                Temperature: `The current temperature is ${body.current.temperature} degrees Celcius chances of rain is at ${body.current.precip}%`
             });
         }
     }) 
