@@ -23,7 +23,7 @@ app.use(express.static(PublicDirectoryPath)) // still don't understand this line
 
 
 //app.get used to serve up data from the sever and also receives request from the websites
-app.get('/index', (req,res)=>{
+app.get('', (req,res)=>{
     res.render('index',{
         title:"Weather",
         name:"John Bosco"

@@ -1,5 +1,5 @@
 const fetchLocation = (location)=>{
-    fetch(`/index/weather?location=${location}`).then((response)=>{
+    fetch(`/weather?location=${location}`).then((response)=>{
     response.json().then((data)=>{
         if(data.error) return msg_1.textContent =  data.error;
         msg_1.textContent = data.Location;
